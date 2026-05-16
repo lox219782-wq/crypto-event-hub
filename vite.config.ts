@@ -12,4 +12,10 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  vite: {
+    base: '/crypto-event-hub/',
+    build: {
+      outDir: 'dist',
+    }
+  }
 });
