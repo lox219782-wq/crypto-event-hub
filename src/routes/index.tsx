@@ -160,7 +160,7 @@ function Landing() {
               { icon: Users, t: "Private Rooms", d: "Закрытые встречи 1-на-1 с фондами через mini app." },
               { icon: Sparkles, t: "Afterparty", d: "Yacht & rooftop события в Marina и Palm." },
             ].map((f) => (
-              <div key={t} className="glass rounded-2xl p-8 group hover:border-primary/40 transition">
+              <div key={f.t} className="glass rounded-2xl p-8 group hover:border-primary/40 transition">
                 <f.icon className="size-8 text-primary mb-4 group-hover:scale-110 transition" />
                 <div className="font-display text-xl font-bold mb-2">{f.t}</div>
                 <p className="text-muted-foreground text-sm">{f.d}</p>
@@ -272,7 +272,7 @@ function Landing() {
                 { icon: Globe, l: "Язык", v: "EN / RU · синхронный перевод" },
                 { icon: Shield, l: "Доступ", v: "По верификации в Telegram Mini App" },
               ].map((row) => (
-                <div key={t} className="flex items-start gap-4 glass rounded-xl p-4">
+                <div key={f.t} className="flex items-start gap-4 glass rounded-xl p-4">
                   <row.icon className="size-5 text-primary mt-0.5 shrink-0" />
                   <div>
                     <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{row.l}</div>
