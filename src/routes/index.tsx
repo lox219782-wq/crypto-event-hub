@@ -272,7 +272,7 @@ function Landing() {
                 { icon: Globe, l: "Язык", v: "EN / RU · синхронный перевод" },
                 { icon: Shield, l: "Доступ", v: "По верификации в Telegram Mini App" },
               ].map((row) => (
-                <div key={f.t} className="flex items-start gap-4 glass rounded-xl p-4">
+                <div key={row.l} className="flex items-start gap-4 glass rounded-xl p-4">
                   <row.icon className="size-5 text-primary mt-0.5 shrink-0" />
                   <div>
                     <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{row.l}</div>
